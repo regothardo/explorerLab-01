@@ -100,6 +100,11 @@ const cardNumberPattern = {
       regex: /^62\d{0,14}/,
       cardtype: "unionpay",
     },
+    {
+      mask: "0000 0000 0000 0000",
+      cardtype: "default",
+    },
+
   ],
   dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
