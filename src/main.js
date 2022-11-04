@@ -133,10 +133,12 @@ document.querySelector("form").addEventListener("submit", (evento) => {
 })
 
 const cardHolder = document.querySelector("#card-holder")
+cardHolder.maxLength=30
 //input - quando a caixa de texto for receber algum tipo de dado
 cardHolder.addEventListener("input", () => {
   //para acessar a classe value da classe cc-holder
   const ccHolder = document.querySelector(".cc-holder .value")
+  
 
   /*
     if ternário - este nome porque possui três partes
